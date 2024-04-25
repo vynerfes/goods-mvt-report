@@ -45,8 +45,8 @@
     },
     "crossNavigation": {
       "inbounds": {
-        "Display-Display": {
-          "semanticObject": "Display",
+        "GoodsMvtReport-Display": {
+          "semanticObject": "GoodsMvtReport",
           "action": "Display",
           "title": "{{flpTitle}}",
           "signature": {

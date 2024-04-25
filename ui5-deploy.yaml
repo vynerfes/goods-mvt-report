@@ -17,7 +17,7 @@ builder:
           destination: ZHL_Destination
           url: https://my407495-api.s4hana.cloud.sap
         app:
-          name: ZGOODSMVT_REPORT
+          name: ZGOODSMVT_RPT
           package: ZMM_GOODSMVT_REPORT
           transport: ZHLK903522
         exclude:
