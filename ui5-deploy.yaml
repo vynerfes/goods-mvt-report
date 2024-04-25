@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: goodsmvtreport.zmmgoodsmvtreport
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: ZHL_Destination
+          url: https://my407495-api.s4hana.cloud.sap
+        app:
+          name: ZGOODSMVT_REPORT
+          package: ZMM_GOODSMVT_REPORT
+          transport: ZHLK903522
+        exclude:
+          - /test/
